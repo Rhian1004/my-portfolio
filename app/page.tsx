@@ -41,7 +41,7 @@ export default function Home() {
     <div id="content">
       <section className="hero" id="top">
         <div className="hero-orbit" aria-hidden="true"><span/></div>
-        <p className="eyebrow">Urban & Environmental Policy Researcher · Seoul</p>
+        <p className="eyebrow">Urban & Environmental Policy Researcher</p>
         <h1>Evidence for<br/>greener, more<br/><em>resilient cities.</em></h1>
         <div className="hero-bottom"><p>I study how green-space and land-use policies reshape urban markets, migration, demographic structure, and long-term sustainability.</p><a className="circle-link" href="#work" aria-label="View selected work"><ArrowDownRight aria-hidden="true"/></a></div>
         <div className="hero-meta" aria-label="Professional status"><span>Ph.D. Candidate</span><span>Quantitative Research</span><span>Spatial Policy Analysis</span></div>
