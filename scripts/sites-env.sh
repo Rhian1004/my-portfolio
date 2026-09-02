@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Keep this script portable across local and hosted Linux build environments.
 set -euo pipefail
 
 project_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
