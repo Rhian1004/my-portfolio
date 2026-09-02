@@ -16,8 +16,15 @@ const studies = [
 const methodGroups = [
   ["Causal inference","Difference-in-Differences","Regression Discontinuity Design","Panel Data Models"],
   ["Spatial analysis","Spatial Durbin Model","Spatial Spillover Analysis","GIS-Based Spatial Analysis"],
-  ["Research practice","Policy Impact Evaluation","Statistical Diagnostics","Data Visualization"],
-  ["Tools & communication","Stata","R","GIS","Academic & Policy Writing"],
+  ["Research practice","Policy Impact Evaluation","Statistical Diagnostics & Robustness Analysis","Data Visualization","Econometric Modeling"],
+  ["Tools & communication","Stata","R","GIS","Spatial Data Processing","Academic & Policy Writing","English Research Presentations"],
+  ["AI-assisted workflow","ChatGPT","Claude","AI-Assisted Coding","Research Workflow Automation","Vibe Coding"],
+];
+
+const researchHighlights = [
+  {label:"Greenbelt",title:"Deregulation & demographic change",text:"Built a longitudinal municipal panel for South Korea and estimated regional heterogeneity, direct effects, and spatial spillovers in migration, population density, and demographic composition."},
+  {label:"Urban forest",title:"Fire, recovery & property markets",text:"Evaluated the 2013 Pohang forest fire with regression discontinuity methods, tracing both localized property-value effects and broader market recovery."},
+  {label:"Urban park",title:"Planning regulation & land markets",text:"Assessed the land-value implications of South Korea’s Urban Park Sunset Rule and the relationship between long-term planning regulation and private land values."},
 ];
 
 export default function Home() {
@@ -66,13 +73,18 @@ export default function Home() {
           <article><p>Education</p><div><h3>Seoul National University</h3><h4>Ph.D. Candidate · Interdisciplinary Program in Landscape Architecture</h4><p>Graduate School of Environmental Studies. Research focus: quantitative evaluation of urban and environmental policies and their socioeconomic impacts.</p></div></article>
         </div>
       </section>
+      <section className="section research-experience" aria-labelledby="research-experience-title">
+        <div className="section-label"><span>06</span> Research experience</div>
+        <div className="research-experience-head"><p>Selected research practice</p><h2 id="research-experience-title">From policy change<br/>to measurable impact.</h2></div>
+        <div className="research-highlight-list">{researchHighlights.map(({label,title,text})=><article key={label}><p>{label}</p><h3>{title}</h3><p>{text}</p></article>)}</div>
+      </section>
       <section className="section vision" id="vision">
-        <div className="vision-grid" aria-hidden="true"/><div className="section-label"><span>06</span> Career vision</div>
+        <div className="vision-grid" aria-hidden="true"/><div className="section-label"><span>07</span> Career vision</div>
         <blockquote>“Urban green spaces are not amenities at the edge of policy. They are <em>socioeconomic infrastructure</em>.”</blockquote>
         <div className="vision-copy"><p>I aim to connect rigorous quantitative evidence with decisions in urban planning, environmental policy, climate adaptation, and public research.</p><div className="vision-tags"><span>Research institutes</span><span>Evidence-based planning</span><span>Independent research</span><span>Policy consulting</span></div></div>
       </section>
       <section className="section contact" id="contact">
-        <div className="section-label"><span>07</span> Contact</div>
+        <div className="section-label"><span>08</span> Contact</div>
         <div className="contact-main"><p>Open to research conversations and evidence-led collaborations.</p><h2>Let’s connect.</h2><div className="contact-links"><span>Email <strong>[입력 필요]</strong></span><span>LinkedIn <strong>[입력 필요]</strong></span><span>Research profile <strong>[입력 필요]</strong></span></div></div>
         <footer><a href="#top">Haeryung Kim <ArrowUpRight aria-hidden="true"/></a><p>Urban & Environmental Policy Researcher · Seoul, Republic of Korea</p></footer>
       </section>
